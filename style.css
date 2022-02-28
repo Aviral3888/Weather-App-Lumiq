@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('images/bg1.jpg');
+    height: 100vh;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: top center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-size: cover;
+}
+
+.input_container{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.container{
+    display: none;
+    transition: .5s;
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+.container > * {
+    margin-bottom: 20px;
+}
+
+.input-box {
+    width: 50vh;
+    background-color: rgba(255,255,255,0.6);
+    border: none;
+    outline: none;
+    color: #582233;
+    font-size: 1.2rem;
+    height: 50px;
+    border-radius: 5px;
+    padding: 0 10px;
+    text-align: center;
+}
+
+.input-box:focus {
+    background-color: rgba(255,255,255);
+}
+
+.area_1{
+    position: absolute;
+    top: 15vh;
+    left: 8vw;
+    font-size: 30px;
+    transition: 0.5s;
+    border-radius: 12px;
+}
+
+.area_1:hover{
+    box-shadow: -5px 5px 25px grey;
+}
+
+.area_3{
+    position: absolute;
+    top: 3vh;
+    right: 10vw;
+    font-size: 30px;
+}
+
+.city_sec{
+    font-family: 'Ubuntu', sans-serif;
+    padding: 15px;
+    border-radius: 12px;
+    font-size: 22px;
+    box-shadow: -5px 5px 15px grey;
+    line-height: 35px;
+    cursor: pointer;
+}
+
+.humidity_sec, .pressure_sec, .wind_sec{
+    font-weight: bold;
+    font-family: 'Ubuntu', sans-serif;
+    margin-top: 20px;
+    width: 150px;
+    text-align: center;
+    padding: 15px;
+    border-radius: 12px;
+    font-size: 18px;
+    box-shadow: 5px 5px 15px rgb(56, 56, 56);
+    text-shadow: 1px 1px 2px white ;
+    line-height: 25px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.humidity_sec:hover, .pressure_sec:hover, .wind_sec:hover{
+    box-shadow: 5px 5px 25px rgb(56, 56, 56);
+
+}
+
+.area_2{
+    margin-top: 50px;
+}
+
+.temp {
+    font-size: 50pt;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    margin: 20px 0;
+    text-shadow: 2px 4px 2px rgba(161, 128, 128, 0.3);
+}
+
+.min-max, .weather {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 14pt;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.weather-body {
+    align-items: center;
+    justify-content: space-around;
+    color: #582233;
+    padding: 20px;
+    line-height: 2rem;
+    border-radius: 10px;
+}
+
+.footer_area{
+    position: fixed;
+    padding: 8px 15px;
+    bottom: 4vh;
+    left: 5vw;
+    border-radius: 5px;
+    text-shadow: 2px 2px 2px black;
+    background-color: black;
+}
+
+.date{
+    font-family: 'Ubuntu', sans-serif;    
+    color: wheat;
+}
+
